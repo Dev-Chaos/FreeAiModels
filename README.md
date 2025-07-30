@@ -1,5 +1,5 @@
 # FreeAiModels
-A curated collection of open-source AI models compatible with OpenAI.
+Free OpenAI-compatible API providing access to powerful AI models.
 
 
 ## Available Models 🤖

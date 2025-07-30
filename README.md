@@ -111,7 +111,7 @@ from openai import OpenAI
 
 client = OpenAI(
     api_key="Venom",
-    base_url="http://127.0.0.1:5000"
+    base_url="https://venom-ai-apis.vercel.app"
 )
 
 

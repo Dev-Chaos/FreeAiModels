@@ -156,4 +156,4 @@ print(chat_completion.choices[0].message.content)
 
 
 ## Support 
-- (Venom)[https://t.me/e_ee_9_9]
+- [Venom](https://t.me/e_e_9_9)

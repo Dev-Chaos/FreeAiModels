@@ -41,7 +41,7 @@ Free OpenAI-compatible API providing access to powerful AI models.
 pip install openai
 ```
 
-## Basic Usage
+### Basic Usage
 ```python
 from openai import OpenAI
 
@@ -68,7 +68,7 @@ chat_completion = client.chat.completions.create(
 print(chat_completion.choices[0].message.content)
 
 ```
-## Use DeepSearch
+### Use DeepSearch
 ```python
 from openai import OpenAI
 
@@ -95,3 +95,10 @@ chat_completion = client.chat.completions.create(
 print(chat_completion.choices[0].message.content)
 
 ```
+### Models Accept DeepSearch
+- **Grok 4:** `grok-4`
+- **Grok 3:** `grok-3`
+- **Qwen V2.5 VL:** `qwen-v2.5-vl`
+- **Gemini 1.5 Flash:** `gemini-1.5-flash`
+- **Llama 4 Socut:** `llama-4-socut`
+- **Llama 4 Maverick:** `llama-4-maverick`

@@ -102,3 +102,57 @@ print(chat_completion.choices[0].message.content)
 - **Gemini 1.5 Flash:** `gemini-1.5-flash`
 - **Llama 4 Socut:** `llama-4-socut`
 - **Llama 4 Maverick:** `llama-4-maverick`
+
+### Send Image
+```python
+import base64
+from openai import OpenAI
+
+
+client = OpenAI(
+    api_key="Venom",
+    base_url="http://127.0.0.1:5000"
+)
+
+
+# Function to encode the image
+def encode_image(image_path):
+  with open(image_path, "rb") as image_file:
+    return base64.b64encode(image_file.read()).decode('utf-8')
+
+# Getting the base64 string
+base64_image = encode_image("Path/to/agi/image.jpeg")
+
+
+chat_completion = client.chat.completions.create(
+    messages=[
+        {
+            "role": "user",
+            "content": '''what in this image''',
+             'data': {
+                'imagesData': [
+                    {
+         
+                        'contents': 'data:image/jpeg;base64,'+base64_image,
+                    },
+                ]},
+        },
+
+    ],
+    model="grok-4",
+)
+
+ 
+print(chat_completion.choices[0].message.content)
+```
+
+### Models Accept Images
+- **Grok 4:** `grok-4`
+- **Grok 3:** `grok-3`
+- **Qwen V2.5 VL:** `qwen-v2.5-vl`
+- **Gemini 1.5 Flash:** `gemini-1.5-flash`
+- **Llama 4 Socut:** `llama-4-socut`
+- **Llama 4 Maverick:** `llama-4-maverick`
+
+
+

@@ -68,3 +68,30 @@ chat_completion = client.chat.completions.create(
 print(chat_completion.choices[0].message.content)
 
 ```
+## Use DeepSearch
+```python
+from openai import OpenAI
+
+
+client = OpenAI(
+    api_key="Venom",
+    base_url="https://venom-ai-apis.vercel.app"
+)
+
+
+chat_completion = client.chat.completions.create(
+    messages=[
+        {
+            "role": "user",
+            "content": '''Who is the current president of Syria?''',
+            "deepsearch": True,
+        },
+
+    ],
+    model="grok-4",
+    
+)
+ 
+print(chat_completion.choices[0].message.content)
+
+```

@@ -156,4 +156,5 @@ print(chat_completion.choices[0].message.content)
 
 
 ## Support 
-- [Venom](https://t.me/e_e_9_9)
+- **Dev**: [◜𝙑ꫀꪀ᥆ꪑ◞](https://t.me/e_e_9_9)
+- **Channel**: [CadoAi 🤖](https://t.me/CadoAi) 

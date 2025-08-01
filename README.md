@@ -1,6 +1,6 @@
 # FreeAiModels
 Free OpenAI-compatible API providing access to powerful AI models.
-**To Get Free Api Key Please Contact Me:** [◜𝙑ꫀꪀ᥆ꪑ◞](https://t.me/e_e_9_9)
+- **To Get Free Api Key Please Contact Me:** [◜𝙑ꫀꪀ᥆ꪑ◞](https://t.me/e_e_9_9)
 
 ## Available Models 🤖
 ### 1. DeepSeek
